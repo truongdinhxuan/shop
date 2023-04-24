@@ -93,16 +93,16 @@
                         <div id="method" class="collapse one" data-parent="#accordion">
                         </div>
                     </div>
-                    <div class="panel-default">
+                    {{-- <div class="panel-default">
                         <input id="payment_defult" name="payment" value="2" type="radio"
                             data-target="createp_account">
-                        <label for="payment_defult" data-toggle="collapse" data-target="#collapsedefult"
+                        {{-- <label for="payment_defult" data-toggle="collapse" data-target="#collapsedefult"
                             aria-controls="collapsedefult">PayPal <img
-                                src="{{ asset('frontend\assets\img\visha\papyel.png') }}" alt=""></label>
+                                src="{{ asset('frontend\assets\img\visha\papyel.png') }}" alt=""></label> --}}
 
-                        <div id="collapsedefult" class="collapse one" data-parent="#accordion">
+                        {{-- <div id="collapsedefult" class="collapse one" data-parent="#accordion">
                         </div>
-                    </div>
+                    </div>  --}}
                     <div class="order_button">
                         <button type="submit">Thanh toán</button>
                     </div>
