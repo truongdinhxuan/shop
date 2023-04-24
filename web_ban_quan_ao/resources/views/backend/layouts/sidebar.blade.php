@@ -17,22 +17,6 @@
 
     <!-- Divider -->
     <hr class="sidebar-divider">
-
-    <li class="nav-item">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            <span>{{ __('Quản Lý Tài Khoản') }}</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}" href="#"> <i class="fa fa-briefcase mr-2"></i> {{ __('Tất Cả Tài Khoản') }}</a>
-                <a class="collapse-item {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}" href="#"> <i class="fa fa-briefcase mr-2"></i> {{ __('Phân Quyền') }}</a>
-                <a class="collapse-item {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}" href="{{route('settings')}}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Cài Đặt') }}</a>
-                {{-- <a class="collapse-item {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}" href="{{route('about-us.index')}}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Về Chúng Tôi') }}</a> --}}
-                <a class="collapse-item {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}" href="{{route('message.index')}}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Liên Hệ') }}</a>
-            </div>
-        </div>
-    </li>
-
     <li class="nav-item">
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseTwo">
             <span>{{ __('Ecommerce') }}</span>
@@ -42,10 +26,10 @@
                 <a class="collapse-item {{ request()->is('admin/categories') || request()->is('admin/categories/*') ? 'active' : '' }}" href="{{ route('category.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Danh Mục') }}</a>
                 <a class="collapse-item {{ request()->is('admin/tags') || request()->is('admin/tags/*') ? 'active' : '' }}" href="{{ route('brand.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Thương Hiệu') }}</a>
                 <a class="collapse-item {{ request()->is('admin/products') || request()->is('admin/products/*') ? 'active' : '' }}" href="{{ route('product.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Sản Phẩm') }}</a>
-                <a class="collapse-item {{ request()->is('admin/reviews') || request()->is('admin/reviews/*') ? 'active' : '' }}" href="#"> <i class="fa fa-briefcase mr-2"></i> {{ __('Đánh Giá') }}</a>
+                {{-- <a class="collapse-item {{ request()->is('admin/reviews') || request()->is('admin/reviews/*') ? 'active' : '' }}" href="#"> <i class="fa fa-briefcase mr-2"></i> {{ __('Đánh Giá') }}</a> --}}
                 {{-- <a class="collapse-item {{ request()->is('admin/slides') || request()->is('admin/slides/*') ? 'active' : '' }}" href="{{ route('banner.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Banner') }}</a> --}}
-                <a class="collapse-item {{ request()->is('admin/slides') || request()->is('admin/slides/*') ? 'active' : '' }}" href="{{ route('coupon.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Mã Giảm Giá') }}</a>
-                <a class="collapse-item {{ request()->is('admin/slides') || request()->is('admin/slides/*') ? 'active' : '' }}" href="{{route('supplier.index')}}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Nhà Cung Cấp') }}</a>
+                {{-- <a class="collapse-item {{ request()->is('admin/slides') || request()->is('admin/slides/*') ? 'active' : '' }}" href="{{ route('coupon.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Mã Giảm Giá') }}</a> --}}
+                {{-- <a class="collapse-item {{ request()->is('admin/slides') || request()->is('admin/slides/*') ? 'active' : '' }}" href="{{route('supplier.index')}}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Nhà Cung Cấp') }}</a> --}}
             </div>
         </div>
     </li>
@@ -63,19 +47,4 @@
             </div>
         </div>
     </li>
-
-    <li class="nav-item">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseReports" aria-expanded="true" aria-controls="collapseTwo">
-            <span>{{ __('Quản Lý Bài Viết') }}</span>
-        </a>
-        <div id="collapseReports" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}" href="{{route('post-category.index')}}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Loại Bài Viết') }}</a>
-                <a class="collapse-item {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}" href="{{route('post-tag.index')}}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Tag') }}</a>
-                <a class="collapse-item {{ request()->is('admin/reports/revenue') ? 'active' : '' }}" href="{{ route('post.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Bài Viết') }}</a>
-            </div>
-        </div>
-    </li>
-
-
 </ul>

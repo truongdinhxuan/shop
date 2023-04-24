@@ -120,35 +120,6 @@
             </div> --}}
             <!--banner slider start-->
 
-            <!--shop toolbar start-->
-            <div class="shop_toolbar mb-35">
-
-                <div class="list_button">
-
-                </div>
-
-                <div class="select_option">
-                    <form action="{{ route('product-lists-filter') }}" method="POST">
-                        @csrf
-                        <label>Lọc theo</label>
-                        <select name="sort_by" id="short" onchange="this.form.submit()">
-                            <option selected="" value="0">Mói nhất</option>
-                            <option value="priceAsc"@if (!empty($_POST['sort_by']) && $_POST['sort_by'] == 'priceAsc') selected @endif>Giá: Tăng Dần
-                            </option>
-                            <option value="priceDesc" @if (!empty($_POST['sort_by']) && $_POST['sort_by'] == 'priceDesc') selected @endif>Giá: Giảm dần
-                            </option>
-                            <option value="AZ"@if (!empty($_POST['sort_by']) && $_POST['sort_by'] == 'AZ') selected @endif>Tên:A-Z</option>
-                            <option value="ZA" @if (!empty($_POST['sort_by']) && $_POST['sort_by'] == 'ZA') selected @endif>Tên: Z-A</option>
-                            <option value="best-selling" @if (!empty($_POST['sort_by']) && $_POST['sort_by'] == 'best-selling') selected @endif>Bán Chạy
-                                Nhất</option>
-                            <option value="quantity-descending"@if (!empty($_POST['sort_by']) && $_POST['sort_by'] == 'quantity-descending') selected @endif>Tồn
-                                kho giảm dần</option>
-                        </select>
-                    </form>
-                </div>
-            </div>
-            <!--shop toolbar end-->
-
             <!--shop tab product-->
             <div class="shop_tab_product">
                 <div class="tab-content" id="myTabContent">

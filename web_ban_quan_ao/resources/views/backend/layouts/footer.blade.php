@@ -2,7 +2,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; <a href="#"></a> {{ date('Y') }}  BY Nguyễn Khánh Tv</span>
+            <span>bài DEMO</span>
         </div>
     </div>
 </footer>
@@ -20,7 +20,7 @@
 </a>
 
 <!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+{{-- <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 <!-- Bootstrap core JavaScript-->
 <script src="{{ asset('backend/vendor/jquery/jquery.min.js') }}"></script>
